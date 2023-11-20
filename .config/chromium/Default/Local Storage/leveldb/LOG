@@ -1,0 +1,7 @@
+2023/11/20-15:03:45.449 4 Creating DB /home/vinicius/.config/chromium/Default/Local Storage/leveldb since it was missing.
+2023/11/20-15:03:45.478 4 Reusing MANIFEST /home/vinicius/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
+2023/11/20-15:04:51.741 6 Level-0 table #5: started
+2023/11/20-15:04:51.746 6 Level-0 table #5: 87588 bytes OK
+2023/11/20-15:04:51.751 6 Delete type=0 #3
+2023/11/20-15:05:18.809 6 Level-0 table #7: started
+2023/11/20-15:05:18.828 6 Level-0 table #7: 119139 bytes OK
