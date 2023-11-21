@@ -55,6 +55,7 @@ window#waybar.hidden {
 #pulseaudio,
 #network,
 #clock,
+#cpu,
 #tray {
   border-radius: 4px;
   margin: 6px 3px;
@@ -126,6 +127,11 @@ window#waybar.hidden {
   background-color: #f2cdcd;
 }
 
+#cava {
+    padding-bottom: 6.5px;
+    margin-left: 5px
+}
+
 
 tooltip {
 border-radius: 8px;
@@ -137,3 +143,4 @@ tooltip label {
 padding: 5px;
 background-color: #131822;
 }
+

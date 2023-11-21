@@ -2,15 +2,15 @@
     "layer": "top",
     "position": "top",
     "spacing": 0,
-    "height": 34,
+    "height": 42,
     "modules-left": [
         "custom/logo",
         "hyprland/workspaces"
     ],
     "modules-center": [
+        "custom/mediaplayer",
     ],
     "modules-right": [
-        "tray",
         "memory",
         "network",
         "pulseaudio",
@@ -24,7 +24,29 @@
         "icon-theme": "WhiteSur",
         "icon-size": 25,
         "tooltip-format": "{title}"
+    
     },
+
+    "cava": {
+        "framerate": 60,
+        "autosens": 0,
+        "sensitivity": 10,
+        "bars": 8,
+        "method": "pulse",
+        "source": "auto",
+        "stereo": true,
+        "reverse": false,
+        "bar_delimiter": 0,
+        "monstercat": true,
+        "waves": false,
+        "noise_reduction": 0.77,
+        "input_delay": 2,
+        "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+                   "on-click-right": "mode"
+                   }
+    },
+
     "hyprland/workspaces": {
         "on-click": "activate",
         "format": "{icon}",
@@ -42,7 +64,7 @@
             "active": "󱓻",
             "urgent": "󱓻"
         },
-        "persistent_workspaces": {
+        "persistent-workspaces": {
             "1": [],
             "2": [],
             "3": [],
@@ -50,10 +72,16 @@
             "5": []
         }
     },
+    "cpu":{
+	"interval":5,
+        "format": "󰻠 {}%",
+	"max-length": 10
+    },
     "memory": {
         "interval": 5,
         "format": "󰍛 {}%",
-        "max-length": 10
+        "max-length": 10,
+	"on-click": "kitty htop"
     },
     "tray": {
         "spacing": 10
@@ -135,5 +163,11 @@
         "format": "󰤆",
         "tooltip": false,
         "on-click": "~/.config/rofi/powermenu/type-2/powermenu.sh &"
+    },    
+    "custom/mediaplayer": { 
+        "exec": "zscroll -b ' ' -u true -d 0.3 -l 18 'spotifycli --status'",
+	"format":"{}",
+	"max-lenght": 10,
+	"on-click": "~/.config/rofi/applets/bin/mpd.sh"
     }
 }
