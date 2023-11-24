@@ -1,0 +1,6 @@
+1700794345 N rtorrent main: Starting thread.
+1700794345 N rtorrent scgi: Starting thread.
+1700794345 E Could not create download: Could not find any trackers
+1700794361 N rtorrent scgi: Shutting down thread.
+1700794361 N rtorrent main: Shutting down thread.
+1700794361 N rtorrent disk: Shutting down thread.

@@ -12,15 +12,16 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 
 #Alias
 alias nixrc="sudo -E -s nvim /etc/nixos/configuration.nix"
-alias hyprrc="sudo nvim ~/.config/hypr/hyprland.conf"
-alias zshrc="sudo nvim ~/.zshrc"
-alias waybarrc="sudo nvim ~/.config/waybar/config"
-alias waybarcss="sudo nvim ~/.config/waybar/style.css"
+alias hyprrc="sudo -E -s nvim ~/.config/hypr/hyprland.conf"
+alias zshrc="sudo -E -s nvim ~/.zshrc"
+alias zshss="source ~/.zshrc"
+alias waybarrc="sudo -E -s nvim ~/.config/waybar/config"
+alias waybarcss="sudo -E -s nvim ~/.config/waybar/style.css"
 alias waybar-restart="killall waybar & waybar & disown"
-alias ls="eza --header --long --icons --git"
+alias ls="eza --header --long --icons --git --all"
 alias ..="cd .."
 alias cc="clear"
 alias ff="clear && neofetch"
-alias nix-rebuild="nixos-rebuild -I ~/.config/nixos/configuration.nix"
+alias nixrebuild="sudo nixos-rebuild switch"
 
 #Programs
